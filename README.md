@@ -77,9 +77,6 @@ The project implements a complete deep learning workflow:
 ```text
 Gender_Detection_Using_CNN/
 │
-├── dataset/
-│   └── archive.zip                 # Dataset stored locally
-│
 ├── notebook/
 │   └── Human_Gender_Detection_Using_CNN_Model.ipynb
 │

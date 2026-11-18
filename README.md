@@ -1,49 +1,84 @@
-# Human Gender Detection Using CNN
+# 📊 Human Gender Detection Using CNN
 
-## Project Overview
-This project uses a Convolutional Neural Network (CNN) to classify human facial images into two categories: **Male** and **Female**.
+Human Gender Detection Using CNN is a deep learning project that classifies facial images into two categories: **Male** and **Female** using a custom Convolutional Neural Network (CNN).
 
-The model is trained on facial image data and uses deep learning techniques to learn visual features for gender classification.
+The project uses Python, TensorFlow, Keras, and OpenCV to preprocess facial images, train a CNN model, evaluate its performance, and detect faces for gender classification.
 
-## Technologies Used
-- Python
-- TensorFlow
-- Keras
-- OpenCV
-- NumPy
-- Matplotlib
-- Jupyter Notebook
+The model was trained on a dataset containing **27,167 facial images** and achieved **91.9% test accuracy** with a **0.91 macro F1-score**.
 
-## Project Features
-- Facial image preprocessing and normalization
-- Custom CNN architecture with 3 convolutional layers
-- Dropout for reducing overfitting
-- Face detection and cropping using OpenCV Haar Cascade
-- Gender classification with confidence scores
-- Model performance evaluation
+---
 
-## Dataset
-The project uses a facial image dataset containing two categories:
-- Man
-- Women
+## 🚀 Core Features
 
-The images were resized to 64 × 64 pixels and normalized before training.
+The project implements a complete deep learning workflow:
 
-**Note:** The dataset ZIP file is not included in this repository because of its large file size. It is stored locally.
+### Data Preprocessing
+- Loaded and processed facial image data.
+- Organized images into Male and Female categories.
+- Resized images to 64 × 64 pixels.
+- Normalized pixel values for model training.
+- Applied stratified 80:20 train-test splitting.
 
-## Model Details
-- Model: Custom Convolutional Neural Network (CNN)
-- Train-test split: 80:20
-- Data split: Stratified
-- Input image size: 64 × 64 pixels
+### CNN Model Development
+- Built a custom Convolutional Neural Network.
+- Implemented 3 convolutional layers for feature extraction.
+- Used dropout layers to help reduce overfitting.
+- Trained the model using TensorFlow and Keras.
+- Evaluated model performance on test data.
 
-## Model Performance
-- Test Accuracy: **91.9%**
-- Macro F1-Score: **0.91**
+### Face Detection
+- Implemented face detection using OpenCV Haar Cascade.
+- Detected and cropped facial regions from input images.
+- Prepared detected faces for CNN prediction.
 
-## Project Structure
+### Gender Classification
+- Classified facial images into Male and Female categories.
+- Generated prediction confidence scores.
+- Used the trained CNN model for image classification.
+
+### Model Evaluation
+- Evaluated the trained model using test data.
+- Analyzed training and validation accuracy.
+- Examined training and validation loss.
+- Generated a confusion matrix to evaluate classification performance.
+
+---
+
+## 📈 Key Performance Metrics
+
+| Evaluation Metric | Result |
+|---|---:|
+| Total Facial Images | 27,167 |
+| Image Dimensions | 64 × 64 |
+| Train-Test Split | 80:20 |
+| CNN Convolutional Layers | 3 |
+| Test Accuracy | **91.9%** |
+| Macro F1-Score | **0.91** |
+
+---
+
+## 🛠️ Technology Stack
+
+| Category | Technology | Description |
+|---|---|---|
+| Programming Language | Python | Core programming language |
+| Deep Learning | TensorFlow | Deep learning framework |
+| Neural Networks | Keras | CNN model development |
+| Computer Vision | OpenCV | Face detection and image processing |
+| Numerical Computing | NumPy | Numerical operations |
+| Data Analysis | Pandas | Data handling and processing |
+| Visualization | Matplotlib | Training and evaluation visualizations |
+| Development Environment | Jupyter Notebook | Model development and experimentation |
+
+---
+
+## 📂 Project Structure
+
 ```text
 Gender_Detection_Using_CNN/
+│
+├── dataset/
+│   └── archive.zip                 # Dataset stored locally
 │
 ├── notebook/
 │   └── Human_Gender_Detection_Using_CNN_Model.ipynb
@@ -58,26 +93,179 @@ Gender_Detection_Using_CNN/
 └── requirements.txt
 ```
 
-## How to Run
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/kagawadesneha1104-ai/Gender_Detection_Using_CNN.git
-   ```
-2. Navigate to the project folder:
-   ```bash
-   cd Gender_Detection_Using_CNN
-   ```
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Download or place the dataset locally and prepare the required folder structure.
-5. Open the Jupyter Notebook and run the cells.
+**Note:** The dataset ZIP file is excluded from this GitHub repository because of its large file size. It is stored locally and is not deleted.
 
-## Results
-The CNN model achieved 91.9% test accuracy and a macro F1-score of 0.91 on the test dataset.
+---
 
-## Author
+## 🔄 Deep Learning Workflow
+
+```text
+Facial Image Dataset
+        ↓
+Data Loading
+        ↓
+Image Preprocessing
+        ↓
+Image Resizing (64 × 64)
+        ↓
+Pixel Normalization
+        ↓
+Stratified Train-Test Split
+        ↓
+CNN Model Development
+        ↓
+Model Training
+        ↓
+Model Evaluation
+        ↓
+Face Detection using OpenCV
+        ↓
+Gender Classification
+        ↓
+Prediction Confidence
+```
+
+---
+
+## 🧹 Data Preprocessing
+
+The facial image dataset was prepared for CNN model training through the following steps:
+
+- Loaded facial images from the dataset.
+- Organized images into Male and Female categories.
+- Resized images to 64 × 64 pixels.
+- Normalized pixel values.
+- Prepared image arrays for model input.
+- Split the dataset into training and testing sets using an 80:20 stratified split.
+
+---
+
+## 🧠 CNN Model Architecture
+
+A custom Convolutional Neural Network was developed for facial image classification.
+
+The model includes:
+
+- **Convolutional Layers:** Three convolutional layers for extracting facial features.
+- **Dropout:** Used to help reduce overfitting during training.
+- **Classification Layer:** Predicts one of the two dataset categories.
+
+The model was developed and trained using TensorFlow and Keras.
+
+---
+
+## 📊 Model Evaluation & Visualization
+
+The trained model was evaluated using test data and performance metrics.
+
+The project includes the following visualizations:
+
+1. CNN Training and Validation Accuracy
+2. CNN Training and Validation Loss
+3. Confusion Matrix
+
+These visualizations help understand model learning performance and classification results.
+
+---
+
+## 👤 Face Detection Using OpenCV
+
+OpenCV Haar Cascade was used to detect faces from input images.
+
+The face detection workflow includes:
+
+- Detecting facial regions in input images.
+- Cropping detected faces.
+- Preparing cropped images for CNN prediction.
+- Generating gender classification predictions with confidence scores.
+
+---
+
+## 💡 Key Outcomes
+
+The project successfully demonstrates a deep learning-based facial image classification workflow.
+
+Major outcomes:
+
+- Processed 27,167 facial images.
+- Developed a custom CNN with 3 convolutional layers.
+- Applied image preprocessing and normalization.
+- Implemented stratified 80:20 train-test splitting.
+- Achieved 91.9% test accuracy.
+- Obtained a macro F1-score of 0.91.
+- Implemented face detection using OpenCV Haar Cascade.
+- Generated training, validation, and confusion matrix visualizations.
+
+---
+
+## 📦 Requirements
+
+The project uses the following Python libraries:
+
+- Python
+- TensorFlow
+- Keras
+- OpenCV
+- NumPy
+- Pandas
+- Matplotlib
+- Jupyter Notebook
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Running the Project
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/kagawadesneha1104-ai/Gender_Detection_Using_CNN.git
+cd Gender_Detection_Using_CNN
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Prepare the Dataset
+
+The dataset ZIP file is not included in the repository.
+
+Place the dataset in the appropriate local folder and ensure the notebook dataset paths match your local directory structure.
+
+### 4️⃣ Start Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+### 5️⃣ Open the CNN Notebook
+
+Open:
+
+`notebook/Human_Gender_Detection_Using_CNN_Model.ipynb`
+
+Run the notebook cells sequentially to reproduce the preprocessing, model training, and evaluation workflow.
+
+---
+
+## 🎯 Project Objective
+
+The primary objective of this project is to demonstrate the application of Convolutional Neural Networks and computer vision techniques for facial image classification.
+
+The project showcases practical skills in image preprocessing, CNN architecture development, deep learning model training, model evaluation, and face detection using OpenCV.
+
+---
+
+## 👩‍💻 Author
+
 **Sneha Bahubali Kagawade**
 
 GitHub: [kagawadesneha1104-ai](https://github.com/kagawadesneha1104-ai)

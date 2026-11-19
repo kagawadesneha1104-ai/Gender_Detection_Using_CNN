@@ -81,7 +81,7 @@ Gender_Detection_Using_CNN/
 │   └── Gender_Detection_CNN_Report.pdf
 │
 ├── notebook/
-│   └── Human_Gender_Detection_Using_CNN.ipynb
+│   └── Human_Gender_Detection_Using_CNN_Model.ipynb
 │
 ├── presentation/
 │   └── Gender_Detection_CNN_Presentation.pptx

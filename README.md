@@ -77,8 +77,14 @@ The project implements a complete deep learning workflow:
 ```text
 Gender_Detection_Using_CNN/
 │
+├── documentation/
+│   └── Gender_Detection_CNN_Report.pdf
+│
 ├── notebook/
-│   └── Human_Gender_Detection_Using_CNN_Model.ipynb
+│   └── Human_Gender_Detection_Using_CNN.ipynb
+│
+├── presentation/
+│   └── Gender_Detection_CNN_Presentation.pptx
 │
 ├── screenshots/
 │   ├── CNN Training and Validation Accuracy.png
